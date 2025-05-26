@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rexri - Bí quyết làm đẹp chuẩn Hàn từ AucoCosmetics</title>
+    <link rel="icon" href="./Images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "blue-primary": "#1e40af",
+              "blue-secondary": "#3b82f6",
+              "blue-light": "#dbeafe",
+              "blue-dark": "#1e3a8a",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e40af 0%,
+          #3b82f6 50%,
+          #60a5fa 100%
+        );
+      }
+      .floating-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .pulse-glow {
+        animation: pulse-glow 2s infinite;
+      }
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-4 sticky top-0 z-50">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href="#home" class="flex items-center space-x-3 py-2">
+          <img
+            src="./Images/logo.png"
+            alt="Rexri Logo"
+            class="w-14 h-14 object-contain"
+          />
+          <div class="text-2xl font-bold flex items-center">
+            <span class="text-yellow-300">Rexri</span>
+          </div>
+        </a>
+        <div class="hidden md:flex space-x-6">
+          <a href="#products" class="hover:text-yellow-300 transition"
+            >Sản phẩm</a
+          >
+          <a href="#benefits" class="hover:text-yellow-300 transition"
+            >Công dụng</a
+          >
+          <a href="#contact" class="hover:text-yellow-300 transition"
+            >Liên hệ</a
+          >
+        </div>
+        <button
+          class="bg-yellow-400 text-blue-dark px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition pulse-glow"
+        >
+          Mua ngay
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <span class="text-yellow-300">Rexri</span><br />
+              Tinh hoa dưỡng da từ <span class="text-yellow-300">Hàn Quốc</span>
+            </h1>
+            <p class="text-xl mb-8 text-blue-100">
+              Giải pháp toàn diện cho làn da khỏe mạnh, rạng rỡ với công thức
+              độc đáo kết hợp tinh hoa Đông y và công nghệ hiện đại
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                class="bg-yellow-400 text-blue-dark px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-300 transition pulse-glow"
+              >
+                <i class="fas fa-shopping-cart mr-2"></i>
+                Đặt hàng ngay - Giảm 50%
+              </button>
+              <button
+                class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-primary transition"
+              >
+                <i class="fas fa-play mr-2"></i>
+                Xem video
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="floating-animation">
+              <img
+                src="./Images/gift-box-rexri.jpg"
+                alt="Rexri Products"
+                class="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+              />
+            </div>
+            <div
+              class="absolute -top-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg animate-bounce"
+            >
+              GIẢM 50%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="bg-blue-light py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-certificate text-blue-primary text-3xl mb-3"></i>
+            <h3 class="font-semibold text-blue-dark">Chính hãng Hàn Quốc</h3>
+            <p class="text-sm text-gray-600">Nhập khẩu chính thức</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-shipping-fast text-blue-primary text-3xl mb-3"></i>
+            <h3 class="font-semibold text-blue-dark">Freeship toàn quốc</h3>
+            <p class="text-sm text-gray-600">Giao hàng miễn phí</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-undo text-blue-primary text-3xl mb-3"></i>
+            <h3 class="font-semibold text-blue-dark">Đổi trả 30 ngày</h3>
+            <p class="text-sm text-gray-600">Hoàn tiền 100%</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-phone text-blue-primary text-3xl mb-3"></i>
+            <h3 class="font-semibold text-blue-dark">Tư vấn 24/7</h3>
+            <p class="text-sm text-gray-600">Hỗ trợ chuyên nghiệp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-blue-dark mb-6">
+            Dòng sản phẩm <span class="text-blue-primary">Rexri</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Khám phá bộ sưu tập chăm sóc da cao cấp với công nghệ tiên tiến từ
+            Hàn Quốc
+          </p>
+        </div>
+
+        <!-- Dr. All-in-One Serum -->
+        <div class="mb-20">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+              <div
+                class="bg-blue-primary text-white px-4 py-2 rounded-full inline-block mb-4"
+              >
+                <i class="fas fa-star mr-2"></i>Sản phẩm nổi bật
+              </div>
+              <h3 class="text-3xl md:text-4xl font-bold text-blue-dark mb-6">
+                Rexri Dr. All-in-One Serum
+              </h3>
+              <p class="text-lg text-gray-600 mb-6">
+                Tinh chất đa năng với sức mạnh phục hồi & làm sáng da đột phá.
+                Dung tích 50mL.
+              </p>
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  <span>Chống lão hóa & làm sáng kép</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  <span>Phục hồi & bảo vệ chuyên sâu</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  <span>Chiết xuất rau má nguyên chất</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  <span>Niacinamide & Adenosine được KFDA công nhận</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 mb-6">
+                <span class="text-3xl font-bold text-red-500">1.299.000đ</span>
+                <span class="text-xl text-gray-500 line-through"
+                  >2.598.000đ</span
+                >
+                <span
+                  class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                  >-50%</span
+                >
+              </div>
+              <button
+                class="bg-blue-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-dark transition pulse-glow"
+              >
+                <i class="fas fa-cart-plus mr-2"></i>
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+            <div class="order-1 md:order-2">
+              <img
+                src="./Images/rexri-line-3-set.jpg"
+                alt="Rexri Dr. All-in-One Serum"
+                class="w-full max-w-md mx-auto floating-animation"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative Line -->
+        <div
+          class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12"
+        >
+          <div class="text-center mb-12">
+            <h3 class="text-3xl md:text-4xl font-bold text-blue-dark mb-6">
+              Rexri Creative Line
+            </h3>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Bộ ba dưỡng da toàn diện chuẩn Hoàng Gia với bí quyết độc quyền
+              SAENGGIDAN và CHEONGSHIMDAN
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Toner -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition"
+            >
+              <img
+                src="./Images/anh-san-pham-1.jpg"
+                alt="Rexri Creative Toner"
+                class="w-full max-w-xs mx-auto mb-6"
+              />
+              <h4 class="text-xl font-bold text-blue-dark mb-3">
+                Creative Toner
+              </h4>
+              <p class="text-gray-600 mb-4">
+                Cân bằng & làm dịu da chuyên sâu. Dung tích 130mL.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                <li>• Làm dịu da ngay lập tức</li>
+                <li>• Cung cấp độ ẩm sâu</li>
+                <li>• Cân bằng độ pH lý tưởng</li>
+              </ul>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-blue-primary"
+                  >899.000đ</span
+                >
+                <button
+                  class="bg-blue-primary text-white px-4 py-2 rounded-full hover:bg-blue-dark transition"
+                >
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+
+            <!-- Serum -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition border-2 border-yellow-400"
+            >
+              <div
+                class="bg-yellow-400 text-blue-dark px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4"
+              >
+                Bán chạy nhất
+              </div>
+              <img
+                src="./Images/anh-san-pham-2.jpg"
+                alt="Rexri Creative Serum"
+                class="w-full max-w-xs mx-auto mb-6"
+              />
+              <h4 class="text-xl font-bold text-blue-dark mb-3">
+                Creative Serum
+              </h4>
+              <p class="text-gray-600 mb-4">
+                Tái tạo & phục hồi làn da từ bên trong. Dung tích 50mL.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                <li>• Phục hồi tổn thương da</li>
+                <li>• Cải thiện độ đàn hồi</li>
+                <li>• Làm sáng tông màu da</li>
+              </ul>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-blue-primary"
+                  >1.199.000đ</span
+                >
+                <button
+                  class="bg-yellow-400 text-blue-dark px-4 py-2 rounded-full hover:bg-yellow-300 transition"
+                >
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+
+            <!-- Cream -->
+            <div
+              class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition"
+            >
+              <img
+                src="./Images/anh-san-pham-3.jpg"
+                alt="Rexri Creative Cream"
+                class="w-full max-w-xs mx-auto mb-6"
+              />
+              <h4 class="text-xl font-bold text-blue-dark mb-3">
+                Creative Cream
+              </h4>
+              <p class="text-gray-600 mb-4">
+                Khóa ẩm & nuôi dưỡng chuyên sâu. Dung tích 50mL.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                <li>• Duy trì độ ẩm tối ưu</li>
+                <li>• Tăng cường hàng rào bảo vệ</li>
+                <li>• 8 loại nấm dược liệu quý</li>
+              </ul>
+              <div class="flex items-center justify-between">
+                <span class="text-xl font-bold text-blue-primary"
+                  >999.000đ</span
+                >
+                <button
+                  class="bg-blue-primary text-white px-4 py-2 rounded-full hover:bg-blue-dark transition"
+                >
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <div
+              class="bg-red-500 text-white px-6 py-3 rounded-full inline-block mb-6"
+            >
+              <i class="fas fa-fire mr-2"></i>
+              Combo tiết kiệm - Mua bộ 3 sản phẩm chỉ 2.799.000đ (Tiết kiệm
+              498.000đ)
+            </div>
+            <br />
+            <button
+              class="bg-gradient-to-r from-blue-primary to-blue-secondary text-white px-12 py-4 rounded-full text-xl font-semibold hover:from-blue-dark hover:to-blue-primary transition pulse-glow"
+            >
+              <i class="fas fa-gift mr-2"></i>
+              Mua combo ngay
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 gradient-bg text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Tại sao chọn <span class="text-yellow-300">Rexri</span>?
+          </h2>
+          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            Khám phá những ưu điểm vượt trội của dòng sản phẩm chăm sóc da cao
+            cấp từ Hàn Quốc
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition"
+          >
+            <i class="fas fa-leaf text-yellow-300 text-4xl mb-6"></i>
+            <h3 class="text-xl font-bold mb-4">Thành phần tự nhiên</h3>
+            <p class="text-blue-100">
+              Chiết xuất rau má nguyên chất, nấm dược liệu quý hiếm và thảo mộc
+              Đông y
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition"
+          >
+            <i class="fas fa-microscope text-yellow-300 text-4xl mb-6"></i>
+            <h3 class="text-xl font-bold mb-4">Công nghệ tiên tiến</h3>
+            <p class="text-blue-100">
+              Kết hợp tinh hoa Đông y với công nghệ hiện đại Hàn Quốc
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition"
+          >
+            <i class="fas fa-award text-yellow-300 text-4xl mb-6"></i>
+            <h3 class="text-xl font-bold mb-4">Được KFDA công nhận</h3>
+            <p class="text-blue-100">
+              Niacinamide và Adenosine được Cục Quản lý Thực phẩm và Dược phẩm
+              Hàn Quốc chứng nhận
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition"
+          >
+            <i class="fas fa-shield-alt text-yellow-300 text-4xl mb-6"></i>
+            <h3 class="text-xl font-bold mb-4">An toàn tuyệt đối</h3>
+            <p class="text-blue-100">
+              Không gây kích ứng, phù hợp với mọi loại da kể cả da nhạy cảm
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition"
+          >
+            <i class="fas fa-clock text-yellow-300 text-4xl mb-6"></i>
+            <h3 class="text-xl font-bold mb-4">Hiệu quả nhanh chóng</h3>
+            <p class="text-blue-100">
+              Thấy kết quả rõ rệt chỉ sau 4 tuần sử dụng đều đặn
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition"
+          >
+            <i class="fas fa-heart text-yellow-300 text-4xl mb-6"></i>
+            <h3 class="text-xl font-bold mb-4">Chăm sóc toàn diện</h3>
+            <p class="text-blue-100">
+              Giải pháp 3-trong-1: chống lão hóa, làm sáng da và phục hồi
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="py-20 bg-blue-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-blue-dark mb-6">
+            Hướng dẫn sử dụng
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Quy trình chăm sóc da 3 bước đơn giản để đạt hiệu quả tối ưu
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+            <div
+              class="bg-blue-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+            >
+              1
+            </div>
+            <h3 class="text-xl font-bold text-blue-dark mb-4">Bước 1: Toner</h3>
+            <p class="text-gray-600 mb-4">
+              Sau khi làm sạch da, thoa đều Rexri Creative Toner lên mặt và vỗ
+              nhẹ cho thẩm thấu
+            </p>
+            <img
+              src="./Images/anh-san-pham-1.jpg"
+              alt="Step 1"
+              class="w-32 mx-auto"
+            />
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+            <div
+              class="bg-blue-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+            >
+              2
+            </div>
+            <h3 class="text-xl font-bold text-blue-dark mb-4">Bước 2: Serum</h3>
+            <p class="text-gray-600 mb-4">
+              Chấm đều Rexri Creative Serum lên mặt và cổ, vỗ nhẹ để dưỡng chất
+              thẩm thấu sâu
+            </p>
+            <img
+              src="./Images/anh-san-pham-2.jpg"
+              alt="Step 2"
+              class="w-32 mx-auto"
+            />
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+            <div
+              class="bg-blue-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+            >
+              3
+            </div>
+            <h3 class="text-xl font-bold text-blue-dark mb-4">Bước 3: Cream</h3>
+            <p class="text-gray-600 mb-4">
+              Massage nhẹ nhàng Rexri Creative Cream theo chiều từ trong ra
+              ngoài, từ dưới lên trên
+            </p>
+            <img
+              src="./Images/anh-san-pham-3.jpg"
+              alt="Step 3"
+              class="w-32 mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-blue-dark mb-6">
+            Khách hàng nói gì về <span class="text-blue-primary">Rexri</span>?
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-blue-light rounded-2xl p-8">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Customer 1"
+                class="w-15 h-15 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-blue-dark">Nguyễn Thị Lan</h4>
+                <div class="text-yellow-500">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "Sau 1 tháng sử dụng Rexri, da tôi sáng mịn hơn hẳn. Đặc biệt là
+              serum Dr. All-in-One, hiệu quả thật sự bất ngờ!"
+            </p>
+          </div>
+          <div class="bg-blue-light rounded-2xl p-8">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Customer 2"
+                class="w-15 h-15 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-blue-dark">Trần Minh Anh</h4>
+                <div class="text-yellow-500">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "Bộ Creative Line thật sự tuyệt vời! Da tôi không còn khô căng và
+              nếp nhăn cũng mờ đi nhiều."
+            </p>
+          </div>
+          <div class="bg-blue-light rounded-2xl p-8">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Customer 3"
+                class="w-15 h-15 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-blue-dark">Lê Thị Hương</h4>
+                <div class="text-yellow-500">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "Sản phẩm Hàn Quốc chính hãng, chất lượng tuyệt vời. Tôi sẽ tiếp
+              tục sử dụng và giới thiệu cho bạn bè."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Đừng bỏ lỡ cơ hội <span class="text-yellow-300">GIẢM 50%</span>
+        </h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          Chỉ còn 48 giờ để sở hữu bộ sản phẩm Rexri với giá ưu đãi đặc biệt.
+          Freeship toàn quốc + Tặng kèm quà tặng trị giá 299.000đ
+        </p>
+
+        <div
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto mb-8"
+        >
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div class="text-3xl font-bold text-yellow-300" id="hours">
+                23
+              </div>
+              <div class="text-sm">Giờ</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-yellow-300" id="minutes">
+                59
+              </div>
+              <div class="text-sm">Phút</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-yellow-300" id="seconds">
+                45
+              </div>
+              <div class="text-sm">Giây</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-yellow-400 text-blue-dark px-12 py-4 rounded-full text-xl font-semibold hover:bg-yellow-300 transition pulse-glow"
+          >
+            <i class="fas fa-shopping-cart mr-2"></i>
+            Đặt hàng ngay
+          </button>
+          <button
+            class="border-2 border-white text-white px-12 py-4 rounded-full text-xl font-semibold hover:bg-white hover:text-blue-primary transition"
+          >
+            <i class="fas fa-phone mr-2"></i>
+            Gọi tư vấn: 0928.13.26.26
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-blue-dark mb-6">
+            Liên hệ <span class="text-blue-primary">AucoCosmetics</span>
+          </h2>
+          <p class="text-xl text-gray-600">Mang vẻ đẹp Hàn Quốc đến với bạn</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <i
+                  class="fas fa-map-marker-alt text-blue-primary text-2xl mr-4"
+                ></i>
+                <div>
+                  <h4 class="font-bold text-blue-dark">Địa chỉ</h4>
+                  <p class="text-gray-600">
+                    Tòa nhà Telcom, Lô 18, Khu đô thị Định Công, Hoàng Mai, Hà
+                    Nội
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone text-blue-primary text-2xl mr-4"></i>
+                <div>
+                  <h4 class="font-bold text-blue-dark">Hotline</h4>
+                  <p class="text-gray-600">+84928.13.26.26</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope text-blue-primary text-2xl mr-4"></i>
+                <div>
+                  <h4 class="font-bold text-blue-dark">Email</h4>
+                  <p class="text-gray-600">Mail@aucovietnam.vn</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-globe text-blue-primary text-2xl mr-4"></i>
+                <div>
+                  <h4 class="font-bold text-blue-dark">Website</h4>
+                  <p class="text-gray-600">aucovietnam.vn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-blue-dark mb-6">
+              Đăng ký nhận ưu đãi
+            </h3>
+            <form
+              class="space-y-4"
+              data-form
+              data-success="success-message"
+              method="POST"
+            >
+              <!-- Trường ẩn dùng cho FormSubmit -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Đăng ký nhận ưu đãi"
+              />
+              <input type="hidden" name="_blacklist" value="url" />
+              <!-- Tắt URL nguồn -->
+              <input
+                type="text"
+                placeholder="Họ và tên"
+                name="Họ và tên"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-primary"
+              />
+              <input
+                type="tel"
+                placeholder="Số điện thoại"
+                name="Số điện thoại"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-primary"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="Email"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-primary"
+              />
+              <textarea
+                placeholder="Tin nhắn"
+                name="Nội dung"
+                rows="4"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-primary"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-blue-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-dark transition"
+              >
+                Gửi thông tin
+              </button>
+            </form>
+            <!-- Thông báo thành công -->
+            <p
+              id="success-message"
+              class="hidden text-green-600 mt-4 font-semibold"
+            >
+              ✔️ Đăng ký thành công! Chúng tôi sẽ liên hệ bạn sớm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-dark text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h3 class="text-2xl font-bold mb-4">
+              <span class="text-yellow-300">Rexri</span> by AucoCosmetics
+            </h3>
+            <p class="text-blue-200 mb-4">Mang vẻ đẹp Hàn Quốc đến với bạn</p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-blue-200 hover:text-yellow-300 transition"
+              >
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-yellow-300 transition"
+              >
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-yellow-300 transition"
+              >
+                <i class="fab fa-youtube text-2xl"></i>
+              </a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 sm:col-span-2 lg:col-span-2 gap-8">
+            <div>
+              <h4 class="font-bold mb-4">Sản phẩm</h4>
+              <ul class="space-y-2 text-blue-200">
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Dr. All-in-One Serum</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Creative Toner</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Creative Serum</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Creative Cream</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold mb-4">Hỗ trợ</h4>
+              <ul class="space-y-2 text-blue-200">
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Hướng dẫn sử dụng</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Chính sách đổi trả</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition"
+                    >Vận chuyển</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-yellow-300 transition">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h4 class="font-bold mb-4">Chứng nhận</h4>
+            <p class="text-blue-200 text-sm mb-2">
+              Số tiếp nhận phiếu công bố: 209514/23/CBMP-QLD
+            </p>
+            <p class="text-blue-200 text-sm">
+              Sản phẩm được nhập khẩu và phân phối chính thức từ Hàn Quốc
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-t border-blue-600 mt-8 pt-8 text-center text-blue-200"
+        >
+          <p>
+            &copy; 2025 AucoCosmetics. Design By
+            <a href="https://www.facebook.com/w.fourtech">WFour Tech</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 space-y-4">
+      <a
+        href="tel:+84928132626"
+        class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition pulse-glow"
+      >
+        <i class="fas fa-phone text-xl"></i>
+      </a>
+      <a
+        href="#"
+        class="bg-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition"
+      >
+        <i class="fab fa-facebook-messenger text-xl"></i>
+      </a>
+      <button
+        onclick="scrollToTop()"
+        class="bg-blue-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-dark transition"
+      >
+        <i class="fas fa-arrow-up text-xl"></i>
+      </button>
+    </div>
+
+    <script>
+      // Countdown Timer
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setHours(0, 0, 0, 0);
+        const distance = tomorrow.getTime() - now;
+
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("hours").textContent = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").textContent = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").textContent = seconds
+          .toString()
+          .padStart(2, "0");
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+      // Gửi email
+      document.addEventListener("DOMContentLoaded", () => {
+        const forms = document.querySelectorAll("form[data-form]");
+
+        forms.forEach((form) => {
+          const successMsgId = form.getAttribute("data-success");
+          const successMsg = document.getElementById(successMsgId);
+
+          form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+              const res = await fetch(
+                "https://formsubmit.co/ajax/vankhoabuivo@gmail.com",
+                {
+                  method: "POST",
+                  headers: {
+                    Accept: "application/json",
+                  },
+                  body: formData,
+                }
+              );
+
+              const data = await res.json(); // Phân tích phản hồi JSON
+
+              if (res.ok && data.success) {
+                form.reset();
+                if (successMsg) successMsg.classList.remove("hidden");
+                // Đóng popup và lưu trạng thái để không hiển thị lại
+                setTimeout(() => {
+                  popupNewsletter.classList.add("hidden");
+                  localStorage.setItem("popup-closed", "true");
+                }, 3000);
+              } else {
+                alert("Đã xảy ra lỗi khi gửi. Vui lòng thử lại.");
+              }
+            } catch (err) {
+              alert("Không thể gửi. Vui lòng kiểm tra kết nối mạng.");
+              console.error("Lỗi:", err);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
